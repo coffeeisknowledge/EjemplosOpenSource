@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-angular-developer';
+  firstName: string = 'Unknom';
+  lastName: string = '';
+
+  onDeveloperRegistered(developer: { firstName: string, lastName: string}) {
+    this.firstName = developer.firstName;
+    this.lastName = developer.lastName;
+  }
 }
+
